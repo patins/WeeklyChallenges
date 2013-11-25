@@ -19,7 +19,7 @@ public class SphereChallenge {
         double radius = scanner.nextDouble();
         scanner.close();
         DecimalFormat df = new DecimalFormat("#.0000");
-        df.setRoundingMode(RoundingMode.HALF_UP);
+        df.setRoundingMode(RoundingMode.HALF_UP); // [0, .5) = 0, [.5, 1] = 1
         System.out.println("Volume: " + df.format(volume(radius)));
         System.out.println("Surface Area: " + df.format(surfaceArea(radius)));
     }
