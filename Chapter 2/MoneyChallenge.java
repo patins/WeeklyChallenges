@@ -1,7 +1,10 @@
+
 import java.util.Scanner;
 
 public class MoneyChallenge {
+
     private static enum Unit {
+
         TENBILL(10d, "ten dollar bills"),
         FIVEBILL(5d, "five dollar bills"),
         ONEBILL(1d, "one dollar bills"),
@@ -9,10 +12,9 @@ public class MoneyChallenge {
         DIME(.10d, "dimes"),
         NICKEL(.05d, "nickels"),
         PENNY(.01d, "pennies");
-        
         private final double value;
         private final String name;
-        
+
         private Unit(double value, String name) {
             this.value = value;
             this.name = name;
@@ -26,7 +28,7 @@ public class MoneyChallenge {
             return name;
         }
     }
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Money (in US dollars): ");
