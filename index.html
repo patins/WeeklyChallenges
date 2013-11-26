@@ -1,1 +1,23 @@
-My Github Page
+<html>
+<head>
+<title>Phone Number Challenge Checker</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#check").click(function() {
+		var lines = $("#content").val().split('\n');
+		$.each(lines, function() {
+			alert(this);
+		});
+	});
+});
+</script>
+</head>
+<body>
+<h1>Phone Number Challenge Checker</h1>
+<p>Paste the results of your program below:</p>
+<textarea rows="10" cols="40" id="content"></textarea><br />
+<button id="check">Check</button>
+<div id="result"></div>
+</body>
+</html>
