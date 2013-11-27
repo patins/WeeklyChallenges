@@ -7,7 +7,8 @@ $(document).ready(function() {
 	$("#check").click(function() {
 		var lines = $("#content").val().split('\n');
 		$.each(lines, function() {
-			alert(this);
+			var sections = lines.split('-');
+			
 		});
 	});
 });
