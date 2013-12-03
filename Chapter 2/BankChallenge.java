@@ -29,13 +29,13 @@ public class BankChallenge {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double amount = 0;
-        for (Unit unit : Unit.values()) {
-            System.out.print(unit.getName() + ": ");
-            int quantity = scanner.nextInt();
-            amount += quantity * unit.getValue();
+        for (Unit unit : Unit.values()) { // for each unit
+            System.out.print(unit.getName() + ": "); // request a value
+            int quantity = scanner.nextInt(); // read the value
+            amount += quantity * unit.getValue(); // add this quantity to the total amount
         }
-        int dollars = (int) (Math.floor(amount));
-        int cents = (int) ((amount - dollars) * 100d);
+        int dollars = (int) (Math.floor(amount)); // round down the amount
+        int cents = (int) ((amount - dollars) * 100d); // get the amount in cents
         System.out.println("total dollars: " + dollars);
         System.out.println("total cents: " + cents);
     }

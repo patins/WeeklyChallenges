@@ -31,8 +31,8 @@ public class MoneyChallenge {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Money (in US dollars): ");
-        double remainingMoney = scanner.nextDouble();
+        System.out.print("Money (in US dollars): "); // request amount
+        double remainingMoney = scanner.nextDouble(); // read amount
         scanner.close();
         for (Unit currentUnit : Unit.values()) { // for each unit execute this block
             int quantity = (int) Math.floor(remainingMoney / currentUnit.getValue()); // get how many times the current unit can go into the remaining amount of money
