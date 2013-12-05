@@ -7,7 +7,7 @@ public class LeapYearTest {
 		int year = scanner.nextInt();
 		scanner.close();
 		if(year < 1582) {
-			System.out.println(year + " is not in the gregorian calander.");
+			System.out.println(year + " is not in the Gregorian calendar.");
 			System.exit(0);
 		}
 		boolean leap = (year % 4 == 0) && !(year % 100 == 0 && year % 400 != 0);
